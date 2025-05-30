@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxappescolar.controlador.FXMLFormularioAlumnoController">
+   <children>
+      <ImageView fx:id="ivFoto" fitHeight="100.0" fitWidth="100.0" layoutX="276.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true" />
+      <Button layoutX="261.0" layoutY="137.0" mnemonicParsing="false" onAction="#btnClicSeleccionarFoto" text="Seleccionar foto" />
+      <TextField fx:id="tfNombre" layoutX="49.0" layoutY="178.0" promptText="Nombre" />
+      <TextField fx:id="tfApellidoPaterno" layoutX="49.0" layoutY="220.0" promptText="Apellido Paterno" />
+      <TextField fx:id="tfApellidoMaterno" layoutX="49.0" layoutY="259.0" promptText="Apellido Materno" />
+      <TextField fx:id="tfEmail" layoutX="415.0" layoutY="219.0" promptText="Email" />
+      <TextField fx:id="tfMatricula" layoutX="415.0" layoutY="178.0" promptText="Matricula" />
+      <DatePicker fx:id="dpFechaNacimiento" layoutX="49.0" layoutY="300.0" prefHeight="31.0" prefWidth="187.0" promptText="Fecha de nacimiento" />
+      <ComboBox fx:id="cbFacultad" layoutX="415.0" layoutY="261.0" prefHeight="31.0" prefWidth="187.0" promptText="Facultad" />
+      <ComboBox fx:id="cbCarrera" layoutX="415.0" layoutY="300.0" prefHeight="31.0" prefWidth="187.0" promptText="Carrera" />
+      <Button layoutX="415.0" layoutY="342.0" mnemonicParsing="false" onAction="#btnClicGuardar" text="Guardar" />
+      <Button layoutX="525.0" layoutY="342.0" mnemonicParsing="false" onAction="#btnClicCancelar" text="Cancelar" />
+   </children>
+</AnchorPane>

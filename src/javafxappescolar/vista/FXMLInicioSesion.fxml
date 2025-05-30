@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxappescolar.controlador.FXMLInicioSesionController">
+   <children>
+      <AnchorPane layoutX="300.0" prefHeight="400.0" prefWidth="300.0" style="-fx-background-color: #EDF5FC;">
+         <children>
+            <Label layoutX="78.0" layoutY="24.0" text="Bienvenido(a)">
+               <font>
+                  <Font name="Californian FB Bold" size="24.0" />
+               </font></Label>
+            <Label layoutX="26.0" layoutY="52.0" prefHeight="60.0" prefWidth="248.0" text="Ingresa tu usuario y contraseña para iniciar sesión" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font name="Californian FB" size="16.0" />
+               </font></Label>
+            <TextField fx:id="tfUsuario" layoutX="43.0" layoutY="148.0" promptText="Usuario" style="-fx-border-color: #272D2D;">
+               <font>
+                  <Font name="Californian FB" size="15.0" />
+               </font>
+            </TextField>
+            <Button layoutX="98.0" layoutY="290.0" mnemonicParsing="false" onAction="#btnClicVerificarSesion" style="-fx-background-color: #23CE6B; -fx-border-color: #272D2D;" text="Iniciar sesión">
+               <font>
+                  <Font name="Californian FB" size="15.0" />
+               </font></Button>
+            <PasswordField fx:id="tfPassword" layoutX="44.0" layoutY="222.0" promptText="Contraseña" style="-fx-border-color: #272D2D;">
+               <font>
+                  <Font name="Californian FB" size="15.0" />
+               </font>
+            </PasswordField>
+            <Label layoutX="44.0" layoutY="116.0" prefHeight="32.0" prefWidth="65.0" text="Usuario" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font name="Californian FB" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="44.0" layoutY="190.0" prefHeight="32.0" prefWidth="105.0" text="Contraseña" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font name="Californian FB" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbErrorUsuario" layoutX="43.0" layoutY="168.0" prefHeight="32.0" prefWidth="191.0" textAlignment="CENTER" textFill="RED" wrapText="true">
+               <font>
+                  <Font name="Californian FB" size="11.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbErrorPassword" layoutX="46.0" layoutY="241.0" prefHeight="32.0" prefWidth="191.0" textAlignment="CENTER" textFill="RED" wrapText="true">
+               <font>
+                  <Font name="Californian FB" size="11.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="400.0" prefWidth="300.0" style="-fx-background-color: #23CE6B;">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="75.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../recursos/NerdHerd.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
